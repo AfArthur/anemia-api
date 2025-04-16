@@ -15,9 +15,9 @@ def testar_api():
         
         # 2. Preparar dados para predição
         dados = {
-            "Number": 3,
+            "Number": 4,
             "Sex": 0,
-            "Hb": 6.3,
+            "Hb": 15.3,
             "%Blue pixel": 25.9,
             "%Green pixel": 30.8,
             "%Red Pixel": 43.2

@@ -162,5 +162,17 @@ def shutdown_session(exception=None):
         engine.dispose()
         print("🔌 Conexões com o banco encerradas")
 
+@app.route('/')
+def home():
+    return jsonify({
+        "message": "Bem-vindo à API de Predição de Anemia",
+        "endpoints": {
+            "healthcheck": "/healthcheck (GET)",
+            "prediction": "/predict (POST)",
+            "features": "/features (GET)",
+            "consult": "/consultar (GET)"
+        }
+    })
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000, use_reloader=False)
